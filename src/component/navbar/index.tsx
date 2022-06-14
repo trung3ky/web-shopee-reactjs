@@ -30,7 +30,7 @@ export function Navbar() {
             <Link className='navbar__logo' to='/'>
                 <img
                     className='logo'
-                    src='../static/media/logo.png'
+                    src={process.env.PUBLIC_URL + '/static/media/logo.png'}
                     alt='logo'
                 />
             </Link>
@@ -53,7 +53,7 @@ export function Navbar() {
                     </div>
                     <nav>
                         <ul>
-                            <Link to='/'>
+                            <Link to='/web-shopee-reactjs'>
                                 <li className='overflow'>Home</li>
                             </Link>
                             <Link to='/content-list?page=1'>
