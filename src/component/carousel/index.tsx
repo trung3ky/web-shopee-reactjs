@@ -39,7 +39,7 @@ export function Carousel(props: { slider: any }) {
                             <div className='title'>BEST DEAL !</div>
                             <div className='sub-title'>TOP HEADPHONE</div>
                             <div className='content'>Get up to 50% off Today Only</div>
-                            <Link to='/content-list'>SHOP NOW</Link>
+                            <Link to='/web-shopee-reactjs/content-list'>SHOP NOW</Link>
                         </div>
                     </div>
                 );

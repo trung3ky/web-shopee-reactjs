@@ -143,11 +143,11 @@ export function ContentListPage() {
         }));
 
         if(search !== '') {
-            history.push(`content-list?page=${newPage}&search=${filter.name_like}`)    
+            history.push(`web-shopee-reactjs/content-list?page=${newPage}&search=${filter.name_like}`)    
         }else if(category !== '') {
-            history.push(`content-list?page=${newPage}&category=${filter.category_like}`)
+            history.push(`web-shopee-reactjs/content-list?page=${newPage}&category=${filter.category_like}`)
         } else {
-            history.push(`content-list?page=${newPage}`)
+            history.push(`web-shopee-reactjs/content-list?page=${newPage}`)
         }
     }
 
@@ -165,7 +165,7 @@ export function ContentListPage() {
     }
     
     function clearSearchParamUrl() {
-        history.push('content-list?page=1')
+        history.push('web-shopee-reactjs/content-list?page=1')
 
         setFilter( prev => ({
             ...prev,

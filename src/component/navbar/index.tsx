@@ -10,7 +10,7 @@ export function Navbar() {
 
     function handleSearch() {
         if(textInput.trim() !== ''){
-            history.push(`content-list?page=1&search=${textInput}`)
+            history.push(`/web-shopee-reactjs/content-list?page=1&search=${textInput}`)
             setTextInput('')
         }
     }
@@ -56,12 +56,12 @@ export function Navbar() {
                             <Link to='/web-shopee-reactjs'>
                                 <li className='overflow'>Home</li>
                             </Link>
-                            <Link to='/content-list?page=1'>
+                            <Link to='/web-shopee-reactjs/content-list?page=1'>
                                 <li className='overflow'>Products</li>
                             </Link>
                             <Link to={id 
-                                    ? `content-view?id=${id}` 
-                                    : '/content-view?id=1'
+                                    ? `/web-shopee-reactjs/content-view?id=${id}` 
+                                    : '/web-shopee-reactjs/content-view?id=1'
                                 }
                             >
                                 <li className='overflow'>Detail</li>
