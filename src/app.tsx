@@ -16,10 +16,10 @@ export function App() {
                     <Route exact path='/web-shopee-reactjs'>
                         <LandingPage />
                     </Route>
-                    <Route path='web-shopee-reactjs/content-list'>
+                    <Route path='/web-shopee-reactjs/content-list'>
                         <ContentListPage />
                     </Route>
-                    <Route path='web-shopee-reactjs/content-view'>
+                    <Route path='/web-shopee-reactjs/content-view'>
                         <ContentPage />
                     </Route>
                     <Route>
