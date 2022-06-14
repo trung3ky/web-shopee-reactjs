@@ -72,7 +72,7 @@ export function ContentView(props: { data: Product }) {
             <span className='menu overflow'>
                 <Link to='/web-shopee-reactjs' className='menu__home'>Shoppe</Link>
                 &nbsp;&gt;&nbsp;
-                <Link to={`/web-shopee-reactjs/content-list?page=1&category=${data.category}`}>
+                <Link to={`/content-list?page=1&category=${data.category}`}>
                     {CategoryList[data.category].title}
                 </Link>
                 &nbsp;&gt;&nbsp;

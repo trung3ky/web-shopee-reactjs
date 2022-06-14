@@ -41,7 +41,7 @@ export function SideBar() {
     const { category } = getParamsUrl()
 
     function handleClickCategory(category: string) {
-        history.push(`/web-shopee-reactjs/content-list?page=1&category=${category}`)
+        history.push(`/content-list?page=1&category=${category}`)
     }
 
     return (

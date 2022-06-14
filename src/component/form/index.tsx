@@ -328,7 +328,7 @@ export function Form(props: {
                             handleHide(true);
                             dispatch(actionGetList);
                         }
-                        history.push(`/web-shopee-reactjs/content-list?page=1`)
+                        history.push(`content-list?page=1`)
                     }
                     if (type === 'edit') {
                         const result = await query.product.update(

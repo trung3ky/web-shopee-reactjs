@@ -32,7 +32,7 @@ export function Modal(props : {
                 {id && (
                     <div className='modal__footer'>
                         <Link className='footer__btn' 
-                            to={`/web-shopee-reactjs/content-view?id=${id}`}
+                            to={`content-view?id=${id}`}
                         >
                             Xem chi tiết
                         </Link>

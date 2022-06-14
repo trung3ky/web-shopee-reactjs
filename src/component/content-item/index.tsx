@@ -36,7 +36,7 @@ export function ContentItem(props: {
                     <Link className='content__name' 
                         to={name === 'loading' 
                             ? '#' 
-                            : `/web-shopee-reactjs/content-view?id=${id}`
+                            : `/content-view?id=${id}`
                         }
                     >
                         {name === 'loading' ? 'loading...' : name}
