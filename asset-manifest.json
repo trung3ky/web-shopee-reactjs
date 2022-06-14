@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/web-shopee-reactjs/static/css/main.6317e54c.chunk.css",
-    "main.js": "/web-shopee-reactjs/static/js/main.e6625543.chunk.js",
-    "main.js.map": "/web-shopee-reactjs/static/js/main.e6625543.chunk.js.map",
+    "main.js": "/web-shopee-reactjs/static/js/main.04d4049f.chunk.js",
+    "main.js.map": "/web-shopee-reactjs/static/js/main.04d4049f.chunk.js.map",
     "runtime-main.js": "/web-shopee-reactjs/static/js/runtime-main.f1c59675.js",
     "runtime-main.js.map": "/web-shopee-reactjs/static/js/runtime-main.f1c59675.js.map",
     "static/css/2.a2032d84.chunk.css": "/web-shopee-reactjs/static/css/2.a2032d84.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.a2032d84.chunk.css",
     "static/js/2.c1ef1fe2.chunk.js",
     "static/css/main.6317e54c.chunk.css",
-    "static/js/main.e6625543.chunk.js"
+    "static/js/main.04d4049f.chunk.js"
   ]
 }
