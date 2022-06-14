@@ -28,7 +28,7 @@
 }
 
 .product__image {
-    max-width: 45rem;
+    min-width: 45rem;
     padding: var(--sp-md);
     height: 45rem;
     width: 100%;
