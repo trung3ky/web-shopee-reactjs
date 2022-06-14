@@ -1,0 +1,98 @@
+.sidebar {
+    height: 100vh;
+    max-width: 30rem;
+    width: 100%;
+
+    .sidebar__header {
+        background: linear-gradient(var(--bg-primary),var(--bg-primary-lighter));
+        height: var(--h-header);
+        display: flex;
+        align-items: center;
+        margin-left: calc(var(--sp-xxl) * -1);
+        padding-left: var(--sp-xxl);
+        
+        .header__logo {
+            display: block;
+            height: 7rem;
+            width: 16.2rem;
+
+            .logo {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .sidebar__category {
+        padding: var(--sp-xl) var(--sp-md);
+        padding-left: 0;
+        height: calc(100vh - var(--h-header));
+        overflow-y: auto;
+
+        h1 {
+            font-size: var(--fs-tertiary);
+            color: var(--cl-primary-draker);
+        }
+
+        .category__list {
+            padding: var(--sp-md) 0;
+
+            .category__link + .category__link {
+                margin-top: var(--sp-md);
+            }
+        }
+
+        .category__link {
+            line-height: 1.6rem;
+            display: block;
+            border-radius: 0.3rem;
+            transition: all 0.2s linear;
+            cursor: pointer;
+
+            &:not(.active):hover {
+                background-color: var(--bg-tertiary);
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            } 
+
+            
+            &:not(.active):hover li {
+                padding-left: calc(var(--sp-xs) * 2);
+            }
+            
+            &:not(.active):hover span {
+                color: var(--cl-primary);
+            }
+        }
+        
+        .category__link.active {
+            background-color: var(--bg-tertiary);
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            padding-left: calc(var(--sp-xs) * 2);
+            color: var(--bg-primary);
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            padding: calc(var(--sp-xs) * 2);
+            padding-left: 0;
+            transition: all 0.35s linear;
+
+            img {
+                border-radius: 50%;
+                object-fit: cover;
+                height: 5rem;
+                width: 5rem;
+                border: solid 1px gray;
+            }
+
+            span {
+                display: block;
+                line-height: 2.4rem;
+                margin-left: var(--sp-md);
+                font-size: var(--fs-primary);
+                color: var(--cl-secondary);
+            }
+        }
+    }
+}

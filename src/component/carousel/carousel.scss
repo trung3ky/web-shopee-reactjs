@@ -1,0 +1,174 @@
+.carousel__list {
+    height: var(--h-container);
+    display: flex;
+    position: relative;
+    width: 100vw;
+    // width: 100%;
+
+    .carousel__item {
+        height: 100%;
+        position: relative;
+        width: 0;
+        overflow: hidden;
+        transition: all 0.35s linear;
+        opacity: 0.2;
+
+        .carousel__image {
+            height: 100%;
+            width: 100%;
+            
+            img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .carousel__infor {
+            max-width: 50rem;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            display: none;
+            left: 15%;
+            transform: translateY(-50%);
+            animation: fadeOut 0.35s linear;
+            transition: all 0.35s linear;
+
+            .title {
+                font-size: var(--fs-title-carousel);
+                font-weight: var(--medium);
+                text-transform: uppercase;
+                line-height: 0.9;
+                letter-spacing: 0.2rem;
+                margin-bottom: var(--sp-sm);
+            }
+
+            .sub-title {
+                font-size: var(--fs-sub-title-carousel);
+                text-transform: uppercase;
+                line-height: 1.4;
+                font-weight: 300;
+                margin-bottom: var(--sp-xs);
+            }
+
+            .content {
+                width: 100%;
+                font-size: var(--fs-primary);
+                line-height: 1.2;
+                margin-bottom: var(--sp-xl);
+                padding: 0;
+                color: var(--cl-secondary);
+            }
+
+            a {
+                padding: var(--sp-md) var(--sp-lg);
+                cursor: pointer;
+                line-height: 1.2;
+                font-size: var(--fs-primary);
+                background-color: var(--bg-primary);
+                color: var(--cl-tertiary);
+                font-weight: var(--bold);
+                border-radius: 0.3rem;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+
+    .active {
+        width: 100%;
+        opacity: 1;
+
+        .carousel__infor {
+            display: block;
+            animation: fadeIn 0.35s linear;
+        }
+    }
+
+    .button {
+        position: absolute;
+        top: 50%;
+        height: 4.5rem;
+        width: 4.5rem;
+        transform: translateY(-50%);
+        border-radius: 0.3rem;
+        background-color: var(--bg-primary);
+        color: var(--cl-tertiary);
+        font-size: var(--fs-tertiary);
+        font-weight: var(--medium);
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        justify-content: center;
+        line-height: 2rem;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    .button--next {
+        left: 1.6rem;
+
+        i {
+            transform: translateX(-0.1rem);
+        }
+    }
+
+    .button--prev {
+        right: 1.6rem;
+
+        i {
+            transform: translateX(0.1rem);
+        }
+    }
+
+    .dot__list {
+        position: absolute;
+        left: 50%;
+        bottom: 5rem;
+        display: flex;
+        gap: 1.6rem;
+        transform: translateX(-50%);
+
+        .dot__item {
+            border-radius: 50%;
+            height: 1.5rem;
+            width: 1.5rem;
+            background-color: var(--bg-primary);
+            cursor: pointer;
+            opacity: 0.3;
+        }
+
+        .active {
+            opacity: 1;
+        }
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0.5;
+        transform: translateY(30rem);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.5;
+        transform: translateY(30rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

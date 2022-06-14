@@ -1,0 +1,32 @@
+.content-page {
+    display: flex;
+    height: 100vh;
+    padding: 0 var(--sp-xxl);
+    background-color: var(--bg-tertiary-draker);
+    position: relative;
+    max-width: 2000px;
+    width: 100%;
+
+    .container {
+        height: var(--h-container);
+        display: block;
+        margin-right: calc(var(--sp-xxl) * -1);
+        flex: 1;
+        height: 100vh;
+        margin-right: calc(var(--sp-xxl) * -1);
+
+        .container__right {
+            width: 100%;
+            display: flex;
+            height: var(--h-container);
+            justify-content: flex-start;
+            overflow-y: scroll;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: var(--sp-lg) 0;
+            padding-right: var(--sp-xxl);
+            padding-left: var(--sp-ms);
+        }
+    }
+}

@@ -1,0 +1,125 @@
+.navbar {
+    min-height: var(--h-header);
+    width: 100%;
+    background: linear-gradient(var(--bg-primary), var(--bg-primary-lighter));
+    padding: calc(var(--sp-xs) * 2) var(--sp-xxl);
+    display: flex;
+    align-items: center;
+
+    .navbar__logo {
+        display: none;
+    }
+
+    .navbar__right {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar__search {
+        margin: var(--sp-xs);
+        z-index: 99;
+    }
+
+    .search__wrapper {
+        background-color: var(--bg-tertiary);
+        border-radius: 0.2rem;
+        min-width: 70rem;
+        margin-bottom: var(--sp-sm);
+        display: flex;
+        align-items: center;
+        height: 4rem;
+        padding: var(--sp-xs);
+
+        input {
+            flex: 1;
+            border: none;
+            outline: none;
+            padding: 0 var(--sp-sm);
+            font-size: var(--fs-secondary);
+        }
+
+        .search__button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 var(--sp-md);
+            background-color: var(--bg-primary);
+            cursor: pointer;
+            height: 100%;
+            border-radius: 0.2rem;
+            transition: all 0.2s linear;
+
+            &:hover {
+                background-color: var(--bg-primary-lighter);
+            }
+
+            i {
+                font-size: var(--fs-primary);
+                color: var(--cl-tertiary);
+            }
+        }
+
+        .search__button.active {
+            cursor: wait;
+        }
+    }
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        transform: translateY(0.5rem);
+
+        a + a {
+            margin-left: var(--sp-lg);
+        }
+
+        li {
+            font-size: var(--fs-tertiary);
+            color: var(--cl-tertiary);
+            font-weight: var(--medium);
+            transition: all 0.2s linear;
+            display: block;
+            max-width: 150px;
+
+            &:hover {
+                color: var(--cl-tertiary-lighter);
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .navbar__cart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--cl-tertiary);
+        font-size: var(--fs-cart);
+        width: 13.8rem;
+        cursor: pointer;
+    }
+    .navbar__cart.active {
+        cursor: wait;
+    }
+}
+
+.landing-page {
+    z-index: 99;
+
+    .navbar {
+
+        .navbar__logo {
+            display: block;
+            width: 42.8rem;
+            cursor: alias;
+
+            .logo {
+                height: 7rem;
+                width: 16.2rem;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+

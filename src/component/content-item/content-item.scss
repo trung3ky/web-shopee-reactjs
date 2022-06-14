@@ -1,0 +1,105 @@
+.content {
+    width: 100%;
+    padding: 0 calc(var(--sp-xs) * 2);
+    margin-bottom: var(--sp-md);
+    cursor: pointer;
+    max-height: 295px;
+    height: 100%;
+
+    .content__link {
+        display: block;
+        background-color: var(--bg-tertiary);
+        border-radius: 0.3rem;
+        transition: all 0.2s linear;
+        border: solid 0.1rem var(--cl-tertiary);
+
+        &:hover {
+            box-shadow: rgba(99, 99, 99, 0.2) 0 0.2rem 0.8rem 0;
+            transform: translate(0, -0.1rem);
+            border: solid 0.1rem var(--bg-primary);
+        }
+    }
+}
+
+.content__image {
+    height: 18.8rem;
+    width: 100%;
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .image__loader {
+        border: 0.4rem solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 0.4rem solid var(--bg-primary);
+        width: 5rem;
+        height: 5rem;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+    }
+
+    img {
+        object-fit: cover;
+    }
+}
+
+.content__information {
+    padding: var(--sp-sm);
+
+    .content__name {
+        font-size: var(--fs-title-content-item);
+        color: var(--cl-secondary);
+        line-height: 1.2;
+        margin-bottom: var(--sp-sm);
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        min-height: 3.6rem;
+        transition: all 0.2s linear;
+        
+        &:hover {
+            color: var(--bg-primary);
+        }
+    }
+
+    .content__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.6rem;
+
+        .price {
+            display: block;
+            color: var(--bg-primary);
+            font-size: var(--fs-tertiary);
+            max-width: 50%;
+        }
+
+        .sale {
+            font-size: var(--fs-secondary);
+            max-width: 50%;
+            color: var(--cl-primary-lighter);
+        }
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

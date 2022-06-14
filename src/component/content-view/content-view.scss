@@ -1,0 +1,291 @@
+.content__view {
+    margin-left: var(--sp-md);
+    max-width: 1170px;
+    height: 100%;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        margin-top: var(--sp-md);
+        font-size: var(--fs-primary);
+        color: var(--cl-secondary);
+
+        .menu__home {
+            color: var(--bg-primary);
+        }
+    }
+}
+
+.product {
+    margin-top: var(--sp-lg);
+    background-color: var(--bg-tertiary);
+    border-radius: 0.3rem;
+    display: flex;
+    width: 100%;
+}
+
+.product__image {
+    max-width: 45rem;
+    padding: var(--sp-md);
+    height: 45rem;
+    width: 100%;
+}
+
+.product__infor {
+    max-width: 72rem;
+    padding: var(--sp-lg) var(--sp-xl) var(--sp-lg) var(--sp-lg);
+    width: 100%;
+
+    .infor__name {
+        font-size: var(--fs-name-sale);
+        color: var(--cl-secondary);
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-height: 3.6rem;
+    }
+
+    .infor__review {
+        display: flex;
+        align-items: center;
+        margin-top: var(--sp-lg);
+
+        .number--review,
+        .number--buy {
+            font-size: var(--fs-primary);
+        }
+    }
+
+    .infor__review div {
+        padding: 0 var(--sp-md);
+    }
+
+    .infor__review div:first-child {
+        padding-left: 0;
+    }
+
+    .infor__review div:last-child {
+        padding-right: 0;
+    }
+
+    .infor__review div + div {
+        border-left: solid 0.1rem var(--cl-primary-lighter);
+    }
+
+    .infor__price {
+        margin-top: var(--sp-lg);
+        color: var(--bg-primary);
+        font-weight: var(--fs-normal);
+        padding: var(--sp-md) var(--sp-lg);
+        padding-left: 0;
+
+        span {
+            font-size: var(--fs-price);
+        }
+    }
+
+    .infor__color,
+    .infor__size,
+    .infor__quantity {
+        display: flex;
+        color: var(--cl-secondary);
+        margin-top: var(--sp-md);
+        font-size: var(--fs-primary);
+        padding: 0 var(--sp-lg);
+        padding-left: 0;
+
+        span {
+            min-width: 11rem;
+            line-height: 3rem;
+            color: var(--cl-primary-lighter);
+        }
+
+        button {
+            height: 35px;
+            width: 35px;
+            font-size: var(--fs-tertiary);
+            border: none;
+            cursor: pointer;
+            background-color: transparent;
+        }
+
+        input {
+            height: 35px;
+            width: 35px;
+            outline: none;
+            width: 50px;
+            text-align: center;
+            border: none;
+        }
+
+        .color__list,
+        .size__list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+        }
+
+        .color__item,
+        .size__item {
+            padding: 0.4rem var(--sp-sm);
+            border: solid 0.1rem var(--cl-primary-lighter);
+            font-size: var(--fs-secondary);
+            line-height: 2rem;
+            cursor: pointer;
+            border-radius: 0.3rem;
+            transition: all 0.2s linear;
+
+            &:hover {
+                border-color: var(--bg-primary);
+                color: var(--bg-primary);
+            }
+        }
+
+        .color__item.active {
+            border-color: var(--bg-primary);
+            color: var(--bg-primary);
+        }
+
+        .size__item.active {
+            border-color: var(--bg-primary);
+            color: var(--bg-primary);
+        }
+    }
+
+    .infor__quantity {
+
+        .input {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--sp-md);
+            align-items: center;
+
+            div {
+                border: solid 1px black;
+                display: flex;
+
+                button:first-child {
+                    border-right: solid 1px black ;
+                }
+                
+                button:last-child {
+                    border-left: solid 1px black ;
+                }
+            }
+        }
+
+        .active {
+            cursor: alias;
+        }
+    }
+
+    .infor__size {
+
+        .size__list {
+            
+            .size__item {
+                padding: 0.4rem var(--sp-lg);
+            }
+        }
+    }
+
+    .infor__wraper-button {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+        padding-top: var(--sp-md);
+
+        div {
+            height: 4.8rem;
+            width: 18rem;
+            border-radius: 0.3rem;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            border: solid 0.1rem var(--bg-primary);
+            font-size: var(--fs-primary);
+
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+
+        .button__add {
+            color: var(--bg-primary);
+            background-color: var(--bg-secondary);
+
+            i {
+                margin-right: var(--sp-xs);
+            }
+        }
+
+        .button__buy {
+            color: var(--cl-tertiary);
+            background-color: var(--bg-primary);
+        }
+
+        .button__add.active,
+        .button__buy.active {
+            cursor: wait;
+        }
+    }
+}
+
+.buyer {
+    margin-top: var(--sp-md);
+    padding: var(--sp-lg);
+    background-color: var(--bg-tertiary);
+    display: flex;
+    align-items: center;
+    border-radius: 0.3rem;
+
+    .buyer__image {
+        height: 7.8rem;
+        width: 7.8rem;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .buyer__infor {
+        flex-direction: row;
+        margin-left: var(--sp-md);
+
+        .name {
+            display: block;
+            font-size: var(--fs-primary);
+        }
+
+        .active {
+            display: block;
+            margin-top: var(--sp-xs);
+            font-size: var(--fs-primary);
+            color: var(--cl-primary-lighter);
+        }
+    }
+}
+
+.description {
+    margin-top: var(--sp-md);
+    border-radius: 0.3rem;
+    padding-bottom: var(--sp-xl);
+
+    span {
+        background-color: var(--bg-tertiary);
+        padding: var(--sp-lg);
+        font-size: var(--fs-primary);
+        color: var(--cl-secondary);
+        display: block;
+        line-height: 2;
+
+        &:empty {
+            margin-top: 0;
+            padding: 0;
+        }
+    }
+}

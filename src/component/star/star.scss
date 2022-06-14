@@ -1,0 +1,38 @@
+.number-star {
+    color: var(--bg-primary);
+    font-size: var(--fs-secondary);
+    display: flex;
+    align-items: center;
+
+    span {
+        text-decoration: none;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -0.3rem;
+            width: 100%;
+            border-width: 0 0 1px;
+            border-style: solid;
+        }
+    }
+    div {
+        i {
+            color: var(--cl-primary-lighter);
+        }
+        i+i{
+            margin-left: var(--sp-xs);
+        }
+
+        .active {
+            color: var(--bg-primary);
+        }
+    }
+
+    .star-sm {
+        margin-bottom: var(--sp-md);
+        font-size: var(--fs-secondary);
+    }
+}

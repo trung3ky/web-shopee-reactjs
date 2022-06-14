@@ -1,0 +1,19 @@
+@import './reset.scss';
+@import './variable.scss';
+@import './base.scss';
+
+.app {
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-tertiary-draker);
+
+    .header{
+        height: 100px;
+        background-color: var(--bg-primary);
+        position: absolute;
+        left: 0;
+        right: 0;
+        background: linear-gradient(var(--bg-primary),var(--bg-primary-lighter));
+        height: var(--h-header);
+    }
+}
