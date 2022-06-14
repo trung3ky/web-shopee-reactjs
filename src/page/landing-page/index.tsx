@@ -2,9 +2,9 @@ import { Navbar, Carousel } from '../../component';
 
 export function LandingPage() {
     const image = [
-        '../static/media/slider1.jpg',
-        '../static/media/slider2.jpg',
-        '../static/media/slider3.jpg',
+        process.env.PUBLIC_URL + '../static/media/slider1.jpg',
+        process.env.PUBLIC_URL + '../static/media/slider2.jpg',
+        process.env.PUBLIC_URL + '../static/media/slider3.jpg',
     ];
 
     return (

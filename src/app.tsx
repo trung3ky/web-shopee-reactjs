@@ -13,7 +13,7 @@ export function App() {
             <div className='header'></div>
             <Router>
                 <Switch>
-                    <Route exact path='/'>
+                    <Route exact path='/web-shopee-reactjs'>
                         <LandingPage />
                     </Route>
                     <Route path='/content-list'>

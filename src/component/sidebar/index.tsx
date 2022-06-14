@@ -8,27 +8,27 @@ export function SideBar() {
     const history = useHistory()
     const categoryList = [
         {
-            src: '../static/media/fashion.png',
+            src: process.env.PUBLIC_URL + '../static/media/fashion.png',
             title: 'Thời trang',
             category: 'thời trang'
         },
         {
-            src: '../static/media/shoe.png',
+            src: process.env.PUBLIC_URL + '../static/media/shoe.png',
             title: 'Giày dép',
             category: 'giày dép'
         },
         {
-            src: '../static/media/phone.png',
+            src: process.env.PUBLIC_URL + '../static/media/phone.png',
             title: 'Điện thoại',
             category: 'điện thoại'
         },
         {
-            src: '../static/media/laptop.png',
+            src: process.env.PUBLIC_URL + '../static/media/laptop.png',
             title: 'Máy tính và laptop',
             category: 'laptop'
         },
         {
-            src: '../static/media/watch.png',
+            src: process.env.PUBLIC_URL + '../static/media/watch.png',
             title: 'Đồng hồ',
             category: 'đồng hồ'
         },
