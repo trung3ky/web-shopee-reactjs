@@ -70,7 +70,7 @@ export function ContentView(props: { data: Product }) {
     return (
         <div className='content__view'>
             <span className='menu overflow'>
-                <Link to='/web-shopee-reactjs' className='menu__home'>Shoppe</Link>
+                <Link to='/' className='menu__home'>Shoppe</Link>
                 &nbsp;&gt;&nbsp;
                 <Link to={`/content-list?page=1&category=${data.category}`}>
                     {CategoryList[data.category].title}

@@ -8,7 +8,7 @@ export function NotFoundPage() {
                 <h1>404</h1>
                 <span className='infor__title'>Sorry, Page Not Found</span>
                 <span className='infor__sub-title'>The page you requested could not be found</span>
-                <Link to='/web-shopee-reactjs'>
+                <Link to='/'>
                     <button>GO BACK HOME</button>
                 </Link>
             </div>

@@ -53,7 +53,7 @@ export function Navbar() {
                     </div>
                     <nav>
                         <ul>
-                            <Link to='/web-shopee-reactjs'>
+                            <Link to='/'>
                                 <li className='overflow'>Home</li>
                             </Link>
                             <Link to='/content-list?page=1'>

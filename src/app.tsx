@@ -11,9 +11,9 @@ export function App() {
     return (
         <div className='app'>
             <div className='header'></div>
-            <Router>
+            <Router basename='/web-shopee-reactjs'>
                 <Switch>
-                    <Route exact path='/web-shopee-reactjs'>
+                    <Route exact path='/'>
                         <LandingPage />
                     </Route>
                     <Route path='/content-list'>
