@@ -44,3 +44,22 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Link Demo
+
+https://trung3ky.github.io/web-shopee-reactjs/
+
+## Giao diện web
+
+Home page
+![image](https://user-images.githubusercontent.com/70089805/173735183-c7aa7d27-7ddf-4d7b-8c90-f7ce702355b4.png)
+Content list
+![image](https://user-images.githubusercontent.com/70089805/173735230-0e14d5c8-1d56-483f-85bd-b8fc17a3fa90.png)
+Content Detail
+![image](https://user-images.githubusercontent.com/70089805/173735253-7d91b8fb-b49b-4488-8ad1-e898d1b087bf.png)
+Add product
+![image](https://user-images.githubusercontent.com/70089805/173735273-eecd9bc3-26eb-4b9c-8a43-15ce358e09c3.png)
+Edit product
+![image](https://user-images.githubusercontent.com/70089805/173735285-85fa086a-6dcd-4738-8bae-577ac1d37485.png)
+
+
