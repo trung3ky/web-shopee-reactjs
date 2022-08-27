@@ -1,5 +1,5 @@
 .content__view {
-    margin-left: var(--sp-md);
+    // margin-left: var(--sp-md);
     max-width: 1170px;
     height: 100%;
 
@@ -28,16 +28,16 @@
 }
 
 .product__image {
-    min-width: 450px;
+    // min-width: 450px;
     padding: var(--sp-md);
     height: 45rem;
-    width: 100%;
+    width: 40%;
 }
 
 .product__infor {
-    max-width: 72rem;
+    // max-width: 72rem;
     padding: var(--sp-lg) var(--sp-xl) var(--sp-lg) var(--sp-lg);
-    width: 100%;
+    width: 60%;
 
     .infor__name {
         font-size: var(--fs-name-sale);

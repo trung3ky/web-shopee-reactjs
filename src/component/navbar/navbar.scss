@@ -5,6 +5,8 @@
     padding: calc(var(--sp-xs) * 2) var(--sp-xxl);
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    padding-left: 0;
 
     .navbar__logo {
         display: none;
@@ -13,7 +15,9 @@
     .navbar__right {
         flex: 1;
         display: flex;
-        justify-content: space-between;
+        max-width: 1200px;
+        width: 100%;
+        justify-content: flex-start;
     }
 
     .navbar__search {
