@@ -108,14 +108,23 @@
 }
 
 .landing-page {
+    display: flex;
+    flex-direction: column;
     z-index: 99;
-
+    justify-content: center;
+    align-items: center;
     .navbar {
-
+        max-width: 2000px;
+        width: 100%;
+        justify-content: space-between;
+        justify-self: center;
+        padding-left: 128px;
         .navbar__logo {
-            display: block;
-            width: 42.8rem;
+            display: flex;
+            justify-content: flex-start;
             cursor: alias;
+            max-width: 30rem;
+            width: 100%;
 
             .logo {
                 height: 7rem;
