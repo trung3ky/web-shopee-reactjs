@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/web-shopee-reactjs/static/css/main.325c4eca.chunk.css",
-    "main.js": "/web-shopee-reactjs/static/js/main.736e96ff.chunk.js",
-    "main.js.map": "/web-shopee-reactjs/static/js/main.736e96ff.chunk.js.map",
-    "runtime-main.js": "/web-shopee-reactjs/static/js/runtime-main.f1c59675.js",
-    "runtime-main.js.map": "/web-shopee-reactjs/static/js/runtime-main.f1c59675.js.map",
-    "static/css/2.a2032d84.chunk.css": "/web-shopee-reactjs/static/css/2.a2032d84.chunk.css",
-    "static/js/2.c1ef1fe2.chunk.js": "/web-shopee-reactjs/static/js/2.c1ef1fe2.chunk.js",
-    "static/js/2.c1ef1fe2.chunk.js.map": "/web-shopee-reactjs/static/js/2.c1ef1fe2.chunk.js.map",
-    "static/js/3.651a940f.chunk.js": "/web-shopee-reactjs/static/js/3.651a940f.chunk.js",
-    "static/js/3.651a940f.chunk.js.map": "/web-shopee-reactjs/static/js/3.651a940f.chunk.js.map",
+    "main.css": "/web-shopee-reactjs/static/css/main.962eb6c8.chunk.css",
+    "main.js": "/web-shopee-reactjs/static/js/main.1d3ee667.chunk.js",
+    "main.js.map": "/web-shopee-reactjs/static/js/main.1d3ee667.chunk.js.map",
+    "runtime-main.js": "/web-shopee-reactjs/static/js/runtime-main.f14599eb.js",
+    "runtime-main.js.map": "/web-shopee-reactjs/static/js/runtime-main.f14599eb.js.map",
+    "static/css/2.f83b9687.chunk.css": "/web-shopee-reactjs/static/css/2.f83b9687.chunk.css",
+    "static/js/2.d1ac9340.chunk.js": "/web-shopee-reactjs/static/js/2.d1ac9340.chunk.js",
+    "static/js/2.d1ac9340.chunk.js.map": "/web-shopee-reactjs/static/js/2.d1ac9340.chunk.js.map",
+    "static/js/3.ed560688.chunk.js": "/web-shopee-reactjs/static/js/3.ed560688.chunk.js",
+    "static/js/3.ed560688.chunk.js.map": "/web-shopee-reactjs/static/js/3.ed560688.chunk.js.map",
     "index.html": "/web-shopee-reactjs/index.html",
-    "static/css/2.a2032d84.chunk.css.map": "/web-shopee-reactjs/static/css/2.a2032d84.chunk.css.map",
-    "static/css/main.325c4eca.chunk.css.map": "/web-shopee-reactjs/static/css/main.325c4eca.chunk.css.map",
-    "static/js/2.c1ef1fe2.chunk.js.LICENSE.txt": "/web-shopee-reactjs/static/js/2.c1ef1fe2.chunk.js.LICENSE.txt"
+    "static/css/2.f83b9687.chunk.css.map": "/web-shopee-reactjs/static/css/2.f83b9687.chunk.css.map",
+    "static/css/main.962eb6c8.chunk.css.map": "/web-shopee-reactjs/static/css/main.962eb6c8.chunk.css.map",
+    "static/js/2.d1ac9340.chunk.js.LICENSE.txt": "/web-shopee-reactjs/static/js/2.d1ac9340.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f1c59675.js",
-    "static/css/2.a2032d84.chunk.css",
-    "static/js/2.c1ef1fe2.chunk.js",
-    "static/css/main.325c4eca.chunk.css",
-    "static/js/main.736e96ff.chunk.js"
+    "static/js/runtime-main.f14599eb.js",
+    "static/css/2.f83b9687.chunk.css",
+    "static/js/2.d1ac9340.chunk.js",
+    "static/css/main.962eb6c8.chunk.css",
+    "static/js/main.1d3ee667.chunk.js"
   ]
 }
