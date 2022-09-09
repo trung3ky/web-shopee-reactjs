@@ -6,8 +6,9 @@ export function Modal(props : {
     title: any, 
     id?: any, 
     children: React.ReactNode
+    className?: string
 }) {
-    const { hanldeHide, title, id, children} = props;
+    const { hanldeHide, title, id, children, className} = props;
     
     function closeModal(e: any) {
         if (hanldeHide) {
@@ -17,7 +18,7 @@ export function Modal(props : {
 
     return (
         <div className='modal' onClick={closeModal}>
-            <div className='modal__box' 
+            <div className={`modal__box ${className}`}
                 onClick={(e) => {e.stopPropagation()}}
             >
                 <div className='modal__header'>

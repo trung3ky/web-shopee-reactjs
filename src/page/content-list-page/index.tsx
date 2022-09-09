@@ -244,6 +244,7 @@ export function ContentListPage() {
                 <Modal
                     hanldeHide={handleHideModalForm}
                     title='Thêm sản phẩm'
+                    className='add__product' 
                 >
                     <Form type='add' 
                         handleHide={handleHideModalForm} 
